@@ -1,7 +1,7 @@
 import discord
 from discord.ext.commands import bot
 from discord.ext import commands
-import asysncio
+import asyncio
 import time
 
 Client = discord.Client ()
@@ -15,5 +15,15 @@ async def on_ready():
 async def on_message(message):
     if message.content == "cookie":
         await client.send_message(message.channel, ":cookie:")
+
+@client.event
+async def on_message(message):
+    if message.content == "100":
+        await client.send_message(message.channel, ":100:")
+
+@client.event
+async def on_message(message):
+    if message.content == "god save the queen":
+        await client.send_message(message.channel, ":flag_gb: :flag_gb: :flag_gb:")
 
 client.run("NTAzNjU2MTc3NjgzMzk4Njc1.Dq5txg.WDWMGBovm-6VOTP86Nipck5YOcw")
