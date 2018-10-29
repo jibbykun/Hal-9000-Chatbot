@@ -34,8 +34,23 @@ async def on_message(message):
             await client.send_message(message.channel, msg)
 
 
-
-
+        
+        elif message.content == "Hey":
+            await client.send_message(message.channel, "Hi!",tts=True)
+        elif message.content == "tell me something interesting":
+            await client.send_message(message.channel, "What do you wanna know about?",tts=True)
+        elif message.content == "so what can you do?":
+            await client.send_message(message.channel, "I can run basic tasks or just have a nice talk. Your call",tts=True)
+        elif message.content == "Hi":
+            await client.send_message(message.channel, "Hey",tts=True)
+        elif message.content == "Hello":
+            await client.send_message(message.channel, "Hey",tts=True)
+        elif message.content == "hi":
+            await client.send_message(message.channel, "Hello user.",tts=True)
+        elif message.content == "hey":
+            await client.send_message(message.channel, "Hello, how may i assist you?",tts=True)
+        elif message.content == "hello":
+            await client.send_message(message.channel, "Hey",tts=True)
         elif message.content == "how are you?":
             await client.send_message(message.channel, "Doing well. What about you?",tts=True)
         elif message.content == "great":
