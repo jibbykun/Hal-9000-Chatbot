@@ -17,7 +17,7 @@ async def on_message(message):
 
     if message.content == "Can you tell me a joke?":
 
-        jokes = ["What would you call a spud at a rock concert? A mosh potato!", "Why does Waldo wear a striped shirt? Because he doesn't want to be spotted!", "What's the difference between a cat and a comma? A cat has claws at the end of its paws and a comma is a pause at the end of a clause.", "Where do polar bears keep their money? In a snow bank!", "What did the finger say to the thumb? I'm in glove with you!", "What do a dog and a phone have in common? They both have collar ID.", "What’s brown and sticky? Wait for it... a stick!", "I wondered why the baseball was getting bigger… the it hit me.", "What did the dog say after a long day of work? Today was ruff.", "What kind of shoes do ninjas wear? Sneakers", "Why did the Banker quit his job? He lost his interest!", "How does NASA organize a party? They planet", "Hear about the new restaurant called Karma? There’s no menu: You get what you deserve."]
+        jokes = ["What would you call a spud at a rock concert? A mosh potato!", "Why does Waldo wear a striped shirt? Because he doesn't want to be spotted!", "What's the difference between a cat and a comma? A cat has claws at the end of its paws and a comma is a pause at the end of a clause.", "Where do polar bears keep their money? In a snow bank!", "What did the finger say to the thumb? I'm in glove with you!", "What do a dog and a phone have in common? They both have collar ID."]
 
         await client.send_message(message.channel, random.choice(jokes))
 
