@@ -14,20 +14,20 @@ async def on_ready():
 @client.event
 async def on_message(message):
     if message.content == "cookie":
-        await client.send_message(message.channel, ":cookie:",tts=True)
+        await client.send_message(message.channel, ":cookie:", tts=True)
 
     elif message.content == "100":
-        await client.send_message(message.channel, ":100:",tts=True)
+        await client.send_message(message.channel, ":100:", tts=True)
 
     elif message.content == "hello":
-        await client.send_message(message.channel, "Welcome!",tts=True)
+        await client.send_message(message.channel, "Welcome!", tts=True)
 
     elif message.content == "god save the queen":
         await client.send_message(message.channel, ":flag_gb: :flag_gb: :flag_gb:")
 
     elif message.content.startswith("Hello Bot"):
         userID = message.author.id
-        await client.send_message(message.channel, "<@%s> Hello Human" % (userID),tts=True)
+        await client.send_message(message.channel, "<@%s> Hello Human" % (userID), tts=True)
 
     @client.event
     async def on_message(message):
