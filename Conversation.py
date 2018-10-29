@@ -37,11 +37,15 @@ async def on_message(message):
 
 
         elif message.content == "how are you?":
-            await client.send_message(message.channel, "Doing well. What about you?")
+            await client.send_message(message.channel, "Doing well. What about you?",tts=True)
         elif message.content == "great":
-            await client.send_message(message.channel, "Good to know! What are you up to today?")
+            await client.send_message(message.channel, "Good to know! What are you up to today?",tts=True)
+        elif message.content == "nothing":
+            await client.send_message(message.channel, "Interesting.",tts=True)
+        elif message.content == "hey robot":
+            await client.send_message(message.channel, "Yes?",tts=True)
         elif message.content == "I have a project presentation":
-            await client.send_message(message.channel, "That's nice. Any way i can assist you in?")
+            await client.send_message(message.channel, "That's nice. Any way i can assist you in?",tts=True)
         elif message.content == "no i'm good":
-            await client.send_message(message.channel, "Alright then. catch you later.")
+            await client.send_message(message.channel, "Alright then. catch you later.",tts=True)
 client.run("NTAzNjU2MTc3NjgzMzk4Njc1.Dq5txg.WDWMGBovm-6VOTP86Nipck5YOcw")
