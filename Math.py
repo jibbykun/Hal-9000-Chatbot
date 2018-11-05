@@ -34,12 +34,34 @@ async def on_message(message):
         secondnumber = message.content
         await client.send_message(message.channel, "which operation do you want? enter either +, -, * or /")
         choice = message.content
-        result = 0
+
         if choice == "+":
             result = firstnumber + secondnumber
             await client.send_message(message.channel, result)
             responses = ("Anything else?", "What else can help you with?", "I hope that was useful", "A good day to be productive!")
             await client.send_message(message.channel, random.choice(responses))
+
+        elif choice == "-":
+            result = firstnumber - secondnumber
+            await client.send_message(message.channel, result)
+            responses = (
+            "Anything else?", "What else can help you with?", "I hope that was useful", "A good day to be productive!")
+            await client.send_message(message.channel, random.choice(responses))
+
+        elif choice == "*":
+            result = firstnumber * secondnumber
+            await client.send_message(message.channel, result)
+            responses = ("Anything else?", "What else can help you with?", "I hope that was useful",
+                             "A good day to be productive!")
+            await client.send_message(message.channel, random.choice(responses))
+
+        elif choice == "/":
+            result = firstnumber / secondnumber
+            await client.send_message(message.channel, result)
+            responses = ("Anything else?", "What else can help you with?", "I hope that was useful",
+                                 "A good day to be productive!")
+            await client.send_message(message.channel, random.choice(responses))
+
 
 
 
