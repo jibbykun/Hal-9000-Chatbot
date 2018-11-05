@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\Khalifa\PycharmProjects\Hal-9000-Chatbot\venv"
+VIRTUAL_ENV="C:\Users\jibbz\PycharmProjects\Hal-9000-Chatbot\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

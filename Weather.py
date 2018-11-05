@@ -14,15 +14,15 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.content == "Birmingham":
-        weather = Weather(unit=Unit.CELSIUS)
-        location = weather.lookup_by_location('Birmingham')
+    place = message.content
+    weather = Weather(unit=Unit.CELSIUS)
+    location = weather.lookup_by_location(place)
 
-        forecasts = location.forecast
-        for forecast in forecasts:
-            await client.send_message(message.channel, "Forecast: " + forecast.text + " Date: " + forecast.date )
-            await client.send_message(message.channel, "High: " + forecast.high + " Low: " + forecast.low)
-            await client.send_message(message.channel, "Day: " + forecast.day)
+    forecasts = location.forecast
+    for forecast in forecasts:
+        await client.send_message(message.channel, "Forecast: " + forecast.text + " Date: " + forecast.date )
+        await client.send_message(message.channel, "High: " + forecast.high + " Low: " + forecast.low)
+        await client.send_message(message.channel, "Day: " + forecast.day)
 
 
 
