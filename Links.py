@@ -1,5 +1,7 @@
+        elif message.content == "Hal" or message.content == "hal":
+            await client.send_message(message.channel, "Yes?",tts=True) 
         elif message.content == ":joy:" or message.content == ":smile:":
-            await client.send_message(message.channel, "Here's the link to Google: https://www.google.co.uk/",tts=True)
+            await client.send_message(message.channel, ":ok_hand:",tts=True)
         elif message.content == "Link me to google" or message.content == "google" or message.content == "Google":
             await client.send_message(message.channel, "Here's the link to Google: https://www.google.co.uk/",tts=True)
         elif message.content == "Can you redirect me to the university website?" or message.content == "link to coventry university":
