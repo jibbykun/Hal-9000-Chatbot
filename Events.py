@@ -26,5 +26,5 @@ async def on_message(message):
     elif message.content == "empire" or message.content == "Empire":
             await client.send_message(message.channel, "Empire has a number of events throughout the month of November. Do you wanna check it out?",tts=True)
     elif message.content == "Yes" or message.content == "sure":
-            await client.send_message(message.channel, "Let me redirect you: http://www.coventryempire.co.uk/ ",tts=True)
+        await client.send_message(message.channel, "Let me redirect you: http://www.coventryempire.co.uk/ ", tts=True)
 client.run("NTAzNjU2MTc3NjgzMzk4Njc1.Dq5txg.WDWMGBovm-6VOTP86Nipck5YOcw")

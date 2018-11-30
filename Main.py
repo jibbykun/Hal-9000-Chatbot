@@ -15,16 +15,11 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    shakespearetriggers = ("HAMLET", "SHAKESPEARE", "ROMEO", "JULIET", "PLAY", "THEATRE")
     message.content = message.content.upper()
-    if "WEATHER" in message.content:
-        os.system('weather.py')
-    elif "HELP" in message.content:
+    if "HELP" in message.content:
         os.system('help.py')
-    elif shakespearetriggers in message.content:
-        os.system('Shakespeare.py')
     elif "JOKES" in message.content:
-        os.system('jokes.py')
+        os.system('Jokes.py')
     elif "TIME" in message.content:
         os.system('Time.py')
     else:
