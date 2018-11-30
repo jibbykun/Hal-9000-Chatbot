@@ -34,7 +34,6 @@ async def on_message(message):
 
         await client.send_message(message.channel, "If you would like to know more about each building type a number from 1 to 24 and learn more about the building you want to!")
 
-
     elif message.content == "1":
 
         await client.send_message(message.channel, "This was constructed in 1963 and has a prominent position on our campus overlooking University Square.  This building is used by our Business Development, Registry and the Vice Chancellors Office. This was named after Alan Berry who was the Director and Chief Executive for the West Midlands Engineering Employers’ Association.")
